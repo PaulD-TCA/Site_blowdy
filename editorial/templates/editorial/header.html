@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Blowdy</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+  <!-- <script src="{% static 'js/main.js' %}"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" type="text/css" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'vendor/icofont/icofont.min.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'vendor/venobox/venobox.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'vendor/owl.carousel/assets/owl.carousel.min.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'vendor/aos/aos.css' %}" />
+
+  <!-- =======================================================
+  * Template Name: Squadfree - v2.3.1
+  * Template URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top header-transparent">
+  <div class="container d-flex align-items-center">
+
+    <div class="logo mr-auto">
+      <h1 class="text-light"><a href="{% url 'home' %}"><span>Blowdy</span></a></h1>
+    </div>
+
+    <nav class="nav-menu d-none d-lg-block">
+      <ul>
+        <li class="active"><a href="{% url 'home' %}">Accueil</a></li>
+        <!-- <li><a href="#about">A propos de nous</a></li> -->
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Galerie</a></li>
+
+        <li><a href="#testimonials">Les références</a></li>
+        <!-- <li><a href="#team">L'équipe</a></li> -->
+        <li><a href="#contact">Contactez nous</a></li>
+        <li><a href="{% url 'login' %}">Connectez vous</a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </div>
+</header><!-- End Header -->
