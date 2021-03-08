@@ -112,6 +112,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.login_section {
+  display: flex;
+  justify-content: center;
+}
+
 /* .fixed-top.header-transparent .container.d-flex.align-items-center {
   background: red;
 } */

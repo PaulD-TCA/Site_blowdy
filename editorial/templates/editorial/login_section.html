@@ -1,35 +1,39 @@
 <!-- <section class="user_section"> -->
-<section id="contact" class="contact section-bg">
+<section id="contact" class="login_section">
+
 
 
   <form class="user_box" method="POST" action="">
-
+    <br><br><br><br>
     {% csrf_token %}
-    <h3 class="standard-title">
+    <h3 class="section-title">
     Connextion
     </h3>
     <input class="input_button user_btn" type="text" name="username" placeholder="Pseudo...">
     <input class="input_button user_btn" type="password" name="password" placeholder="Mot de passe..." class="form-control">
-    <!-- <input id="login_btn user_btn" class="button" type="submit" value="Se connecter"> -->
     <div class="button"><button type="submit">Se connecter</button></div>
 
   </form>
+</section>
 
-<div class="user_box">
-  <h3 class="standard-title">
+<!-- <section id="contact" class="login_section"> -->
+
+  <h3 class="standard-title login_section">
   Pas encore de compte?
   </h3>
 
 
-    <div>
+    <div class="login_section">
     <a href="{% url 'signup' %}">
     <div class="button button2 user_btn">
 
         <span>Créer un compte</span>
+        <br><br>
       </div>
       </a>
+      <br><br>
       </div>
-</div>
 
 
-</section>
+
+<!-- </section> -->

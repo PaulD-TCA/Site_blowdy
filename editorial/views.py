@@ -28,6 +28,10 @@ def user_login(request):
     return render(request, 'editorial/login.html', context)
 
 
+def user_logout(request):
+    """Allow users to logout of an account."""
+    logout(request)
+    return redirect('home')
 
 
 def user_signup(request):

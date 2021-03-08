@@ -20,7 +20,7 @@ class SignUpForm(UserCreationForm):
 
     def __init__(self, *args, **kwargs):
         super(SignUpForm, self).__init__(*args, **kwargs)
-        class_number = 'input_button user_btn'
+        class_number = 'login_section'
         for visible in self.visible_fields():
             visible.field.widget.attrs['class'] = class_number
-            class_number = 'input_button user_btn special'
+            class_number = 'login_section'

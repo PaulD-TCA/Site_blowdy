@@ -52,7 +52,12 @@
         <li><a href="#testimonials">Les références</a></li>
         <!-- <li><a href="#team">L'équipe</a></li> -->
         <li><a href="#contact">Contactez nous</a></li>
-        <li><a href="{% url 'login' %}">Connectez vous</a></li>
+        {% if user.is_authenticated %}
+        <li><a href="{% url 'logout' %}">Se déconnecter</a></li>
+        {% else %}
+          <li><a href="{% url 'login' %}">Connectez vous</a></li>
+        {% endif %}
+        <!-- <li><a href="{% url 'login' %}">Connectez vous</a></li> -->
       </ul>
     </nav><!-- .nav-menu -->
 
