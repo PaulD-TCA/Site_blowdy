@@ -1491,12 +1491,22 @@ ul {
   background: #d1bd67;
 }
 
-ul li {
+/* ul li {
   display: block;
   position: relative;
   float: left;
   background: #d1bd67;
+} */
+
+@media (max-width: 1000px) {
+  .main-navigation {
+    display: block;
+    position: relative;
+    float: left;
+    background: #d1bd67;
+  }
 }
+
 
 li ul { display: none; }
 
@@ -1527,6 +1537,8 @@ ul ul ul {
   left: 100%;
   top: 0;
 }
+
+
 
 
 ul:before,
