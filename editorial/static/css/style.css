@@ -357,6 +357,65 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+@media (max-width: 1150px) {
+  .essais{
+    background-color: red;
+    background: yellow;
+    text-transform: uppercase;
+    color: #2f4d5a;
+  }
+}
+
+@media all and (min-width: 200px) and (max-width: 1100px) {
+  a {
+    color: red;
+    background-color: black;
+    font-size: 1.2em;
+  }
+}
+
+#arborescence {
+/* on centre le menu dans la page */
+    text-align: center;
+}
+
+#arborescence, #arborescence ul{
+padding:0;
+margin:0;
+list-style:none;
+text-align:center;
+}
+#arborescence li{
+display:inline-block;
+position:relative;
+border-radius:8px 8px 0 0;
+}
+#arborescence ul li{
+display:inherit;
+border-radius:0;
+}
+#arborescence ul li:hover{
+border-radius:0;
+}
+#arborescence ul li:last-child{
+border-radius:0 0 8px 8px;
+}
+/* #arborescence ul{
+position:absolute;
+z-index: 1000;
+max-height:0;
+left: 0;
+right: 0;
+overflow:hidden;
+-moz-transition: .8s all .3s;
+-webkit-transition: .8s all .3s;
+transition: .8s all .3s;
+} */
+#arborescence li:hover ul{
+max-height:15em;
+}
+
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/

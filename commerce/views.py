@@ -4,7 +4,7 @@ from django.template import loader
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from .models import Product
-
+from django.contrib.auth.models import User
 
 
 # Create your views here.

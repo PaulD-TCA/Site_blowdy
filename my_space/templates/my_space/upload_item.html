@@ -1,0 +1,25 @@
+{% include 'editorial/header.html' %}
+
+<br><br><br><br><br><br>
+
+
+<section id="services" class="services">
+
+  {% block content %}
+  <h3 class="main_subtitle">
+    Créer un article
+  </h3>
+  <form class="offer_box" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% for field in form %}
+      {{ field }}
+    {% endfor %}
+    <button class="button" type="submit">Créer l'article</button>
+    </form>
+  {% endblock %}
+
+</section>
+
+<br><br><br><br>
+
+{% include 'editorial/footer.html' %}
