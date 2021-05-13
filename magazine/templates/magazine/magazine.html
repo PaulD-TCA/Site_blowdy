@@ -1,0 +1,41 @@
+{% include 'editorial/header.html' %}
+
+<br><br><br><br><br><br>
+
+
+<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+  <h2>Magazine</h2>
+</div>
+
+<section class="design_space">
+
+
+  {% for article in articles %}
+  <section class="catalog_design">
+
+  <div class="box_in_design">
+  <h2>{{ article.p_name }}</h2>
+  <p>{{ article.p_summary }}</p>
+  <p>{{ article.p_creation_date }}</p>
+
+  {% if user.is_authenticated %}
+  <a href="{% url 'article_magazine' article.id%}">
+  <button class="button" type="submit">Consulter l'article</button>
+  </a>
+  {% else %}
+  <button class="button" type="submit">Connectez vous pour consulter l'article</button>
+  {% endif %}
+
+
+  </div>
+
+  </section>
+  {% endfor %}
+
+</section>
+
+
+
+<br><br><br><br>
+
+{% include 'editorial/footer.html' %}

@@ -117,6 +117,58 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
 }
 
+.article_mag_design {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  width: 1000px;
+  margin-top: 20px;
+
+}
+
+.catalog_design {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  width: 550px;
+  margin-top: 20px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px #cccccc;
+}
+
+#id_p_description {
+  width: 500px;
+  height:420px;
+  word-wrap: break-word;
+  word-break: break-word;
+
+}
+
+#id_p_summary {
+  width: 500px;
+  height:40px;
+  overflow-wrap: normal;
+}
+
+#id_p_name{
+  width: 500px;
+  height:20px;
+}
+
+.design_space {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+/* height: 300px;
+width: 1000px;
+margin-top: 20px;
+background-color: #f2f2f2;
+border-radius: 20px;
+box-shadow: 10px 5px 5px #cccccc; */
+}
+
 /* .fixed-top.header-transparent .container.d-flex.align-items-center {
   background: red;
 } */
@@ -414,6 +466,19 @@ transition: .8s all .3s;
 #arborescence li:hover ul{
 max-height:15em;
 }
+
+.user_box {
+  display: flex;
+  flex-direction: column;
+  margin:30px;
+  align-items: center;
+  align-content: space-around;
+  width: 600px;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  box-shadow: 10px 5px 5px #cccccc;
+}
+
 
 
 /*--------------------------------------------------------------

@@ -21,20 +21,36 @@ def upload_item(request):
         current_user = request.user.id
         form = ProductsForm(request.POST, request.FILES)
         if form.is_valid():
-            data_design_name = form.cleaned_data['design_name']
-            data_design_image = form.cleaned_data['design_image']
-            data_plan_2d = form.cleaned_data['plan_2d']
-            data_plan_3d = form.cleaned_data['plan_3d']
-            data_assembly_instruction = form.cleaned_data['assembly_instruction']
-            data_description = form.cleaned_data['description']
-            data_category = form.cleaned_data['category']
-            user = User.objects.get(id=request.user.id)
-            data_to_save = Design(design_name=data_design_name,
-                design_image=data_design_image, plan_2d=data_plan_2d,
-                plan_3d=data_plan_3d, assembly_instruction=data_assembly_instruction,
-                description=data_description, category=data_category, user_id=user)
+            data_p_name = form.cleaned_data['p_name']
+            data_p_description = form.cleaned_data['p_description']
+            data_p_image = form.cleaned_data['p_image']
+            data_p_category = form.cleaned_data['p_category']
+            user_id = User.objects.get(id=request.user.id)
+            data_to_save = Product(p_name=data_p_name,
+                p_description=data_p_description, p_image=data_p_image,
+                p_category=data_p_category, user_id=user_id)
             data_to_save.save()
             return redirect('home')
     else:
         form = ProductsForm()
     return render(request, 'my_space/upload_item.html', {'form':form})
+
+def upload_article(request):
+    """Upload files for a design."""
+    if request.method == 'POST':
+        current_user = request.user.id
+        form = ProductsForm(request.POST, request.FILES)
+        if form.is_valid():
+            data_p_name = form.cleaned_data['p_name']
+            data_p_description = form.cleaned_data['p_description']
+            data_p_image = form.cleaned_data['p_image']
+            data_p_category = "Article"
+            user_id = User.objects.get(id=request.user.id)
+            data_to_save = Product(p_name=data_p_name,
+                p_description=data_p_description, p_image=data_p_image,
+                p_category=data_p_category, user_id=user_id)
+            data_to_save.save()
+            return redirect('home')
+    else:
+        form = ProductsForm()
+    return render(request, 'my_space/upload_article.html', {'form':form})

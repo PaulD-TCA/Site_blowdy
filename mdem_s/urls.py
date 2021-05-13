@@ -24,4 +24,5 @@ urlpatterns = [
     path('', include('commerce.urls')),
     path('', include('immobilier.urls')),
     path('', include('my_space.urls')),
+    path('', include('magazine.urls')),
 ]
