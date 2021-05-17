@@ -42,11 +42,12 @@ def upload_article(request):
         form = ProductsForm(request.POST, request.FILES)
         if form.is_valid():
             data_p_name = form.cleaned_data['p_name']
+            data_p_summary = form.cleaned_data['p_summary']
             data_p_description = form.cleaned_data['p_description']
             data_p_image = form.cleaned_data['p_image']
             data_p_category = "Article"
             user_id = User.objects.get(id=request.user.id)
-            data_to_save = Product(p_name=data_p_name,
+            data_to_save = Product(p_name=data_p_name, p_summary=data_p_summary,
                 p_description=data_p_description, p_image=data_p_image,
                 p_category=data_p_category, user_id=user_id)
             data_to_save.save()
