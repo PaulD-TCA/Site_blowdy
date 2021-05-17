@@ -14,7 +14,7 @@ class ProductsForm(forms.ModelForm):
     widget=forms.TextInput(attrs={'placeholder': "Titre"}))
     p_summary = forms.CharField(max_length=300, required=False, help_text='Requis',
     widget=forms.TextInput(attrs={'placeholder': "Résumé"}))
-    p_description = forms.CharField(max_length=5000, required=False, help_text='Requis',
+    p_description = forms.CharField(max_length=7500, required=False, help_text='Requis',
     widget=forms.Textarea(attrs={'placeholder': "Article"}))
     p_category = forms.CharField(label='What is your favorite fruit?', required=False, help_text='Requis',
     widget=forms.Select(choices=category_choice))#(attrs={'placeholder': "Catégorie" }))
