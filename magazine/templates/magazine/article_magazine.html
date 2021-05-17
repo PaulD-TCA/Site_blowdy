@@ -5,7 +5,7 @@
   {% for article_mag in articles_mag %}
 
 <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-  <h2>{{ article_mag.p_name }}</h2>
+  <img src="{{ article_mag.p_name }}" alt="A mag_picture" height="300">
 </div>
 
 <section class="design_space">
@@ -14,6 +14,7 @@
 
   <div class="box_in_design">
   <p>{{ article_mag.p_image }}</p>
+  <p>{{ article_mag.p_summary }}</p>
   <p>{{ article_mag.p_creation_date }}</p>
   <p>{{ article_mag.p_description }}</p>
   </div>
