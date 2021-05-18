@@ -121,29 +121,38 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   height: 600px;
-  width: 1000px;
+  width: 354px;
   position: relative;
   margin-top: 20px;
 
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
   .article_mag_design {
-    width: 354px;
+    width: 1000px;
   }
 }
 
 .catalog_design {
   display: flex;
   justify-content: center;
-  height: 200px;
-  width: 550px;
+  height: 350px;
+  width: 354px;
   margin-top: 20px;
   background-color: #f2f2f2;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 10px 5px 5px #cccccc;
 }
+
+@media only screen and (min-width: 600px) {
+  .catalog_design {
+    height: 250px;
+    width: 800px;
+  }
+}
+
+
 
 #id_p_description {
   width: 500px;
