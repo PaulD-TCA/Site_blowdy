@@ -10,9 +10,9 @@ category_choice= [
 
 
 class ProductsForm(forms.ModelForm):
-    p_name = forms.CharField(max_length=30, required=False, help_text='Requis',
+    p_name = forms.CharField(max_length=150, required=False, help_text='Requis',
     widget=forms.TextInput(attrs={'placeholder': "Titre"}))
-    p_summary = forms.CharField(max_length=300, required=False, help_text='Requis',
+    p_summary = forms.CharField(max_length=700, required=False, help_text='Requis',
     widget=forms.TextInput(attrs={'placeholder': "Résumé"}))
     p_description = forms.CharField(max_length=7500, required=False, help_text='Requis',
     widget=forms.Textarea(attrs={'placeholder': "Article"}))
