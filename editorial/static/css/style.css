@@ -1736,7 +1736,7 @@ ul:after { clear: both; }
 }
 
 #menu .sub-menu {
-  background-color: #444;
+  background-color: #d1bd67;
   border-width: 1px 1px 0;
   margin: 0 1em;
 }
@@ -1757,7 +1757,7 @@ ul:after { clear: both; }
 
 #menu,
 #toggle-menu {
-  background-color: #09c;
+  background-color: #d1bd67;
 }
 
 #toggle-menu,
@@ -1799,8 +1799,8 @@ ul:after { clear: both; }
   width: 1em;
   height: 1em;
   text-align: center;
-  background-color: rgba(0, 0, 0, .125);
-  text-shadow: 0 0 0 transparent;
+  background-color: #d1bd67;
+  text-shadow: #d1bd67;
   color: rgba(255, 255, 255, .75);
 }
 
