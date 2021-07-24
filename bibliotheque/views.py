@@ -15,3 +15,9 @@ def bibliotheque(request):
     template = loader.get_template('bibliotheque/livres_blo.html')
     context = {}
     return HttpResponse(template.render(context, request))
+
+def bibliotheque_catalogue(request):
+    """Display the main web page."""
+    template = loader.get_template('bibliotheque/catalogue_livres.html')
+    context = {}
+    return HttpResponse(template.render(context, request))

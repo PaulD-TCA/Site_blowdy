@@ -3,12 +3,37 @@
 <br><br><br><br><br><br>
 
 <section class="page-section bg-primary" id="about">
-
+      {% load static %}
   <div class="container">
       <div class="row">
-          {% for favorite in favourites_list %}
 
-          <div id={{ favorite.id }} class="col-12 col-lg-4 border-primary shadow">
+
+
+        <section class="design_space">
+          <section class="catalog_design">
+          <img src="{% static 'img/portfolio/livre.jpg' %}" alt="image" height="150">
+          <div class="box_in_design">
+
+          <h3>Gloire et richesse à tout prix</h3>
+          <p>Olivia Kwame est une jeune femme issue d'une famille aisée qui va faire
+          la rencontre d'un jeune homme d'une trentaine d'années dont elle va
+          tomber amoureuse.</p>
+          </div>
+          </section>
+
+          <section class="catalog_design">
+          <img src="{% static 'img/portfolio/la_petite_princesse.jpg' %}" alt="image" height="150"> 
+          <div class="box_in_design">
+          <h3>La petite princesse métisse Eloïse</h3>
+          <p>Une BD pour enfants by Blowdy</p>
+          </div>
+          </section>
+
+        </section>
+
+          <!-- {% for favorite in favourites_list %} -->
+
+          <!-- <div id={{ favorite.id }} class="col-12 col-lg-4 border-primary shadow">
             <div class="card mb-4 mb-lg-0">
             <div align="right">
             <div class="numberCircle"><h2>{{ favorite.p_image }}</h2></div>
@@ -22,9 +47,9 @@
             <p><a onclick="deleteFunction(this)" name={{ favorite.id }} class="btn btn-info btn-xs" role="button">Acheter</a></p>
            </div>
            </div>
-         </div>
+         </div> -->
 
-          {% endfor %}
+          <!-- {% endfor %} -->
 
 
       </div>
