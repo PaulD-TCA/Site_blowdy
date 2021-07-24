@@ -1870,3 +1870,79 @@ ul:after { clear: both; }
     display: block;
   }
 }
+
+
+
+
+
+
+#menuBlowdy {
+  margin: 0;
+  padding: 0;
+  background-color: #254441;
+}
+
+#logo {
+  display: block;
+  padding: 0 30px;
+  float: left;
+  font-size: 20px;
+  line-height: 60px;
+}
+
+#menuBlowdy:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#menuBlowdy ul {
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+#menuBlowdy ul li {
+  margin: 0px;
+  display: inline-block;
+  float: left;
+  background-color: #254441;
+}
+
+#menuBlowdy a {
+  display: block;
+  padding: 0 20px;
+  color: #FFF;
+  font-size: 20px;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+#menuBlowdy ul li ul li:hover { background: #000000; }
+
+#menuBlowdy a:hover { background-color: #000000; }
+
+#menuBlowdy ul ul {
+  display: none;
+  position: absolute;
+  top: 60px;
+}
+
+#menuBlowdy ul li:hover > ul { display: inherit; }
+
+#menuBlowdy ul ul li {
+  width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+#menuBlowdy ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 170px;
+}
+
+li > a:after { content: ' +'; }
