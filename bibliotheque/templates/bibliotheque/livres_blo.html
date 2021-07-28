@@ -19,37 +19,52 @@
           la rencontre d'un jeune homme d'une trentaine d'années dont elle va
           tomber amoureuse.</p>
           </div>
+
+          {% if user.is_authenticated %}
+
+          <a href="{% url 'gloire_et_richesses' %}">
+          <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+            <button class="button" type="submit">
+              <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+                <h3>Acheter</h3>
+              </div>
+            </button>
+          </div>
+          </a>
+
+
+          {% else %}
+          <button class="button" type="submit">Connectez vous pour acheter le livre</button>
+          {% endif %}
+
           </section>
 
           <section class="catalog_design">
-          <img src="{% static 'img/portfolio/la_petite_princesse.jpg' %}" alt="image" height="150"> 
+          <img src="{% static 'img/portfolio/la_petite_princesse.jpg' %}" alt="image" height="150">
           <div class="box_in_design">
-          <h3>La petite princesse métisse Eloïse</h3>
+          <h3>La petite princesse métisse Eloïse </h3>
           <p>Une BD pour enfants by Blowdy</p>
+
+          {% if user.is_authenticated %}
+
+          <a href="{% url 'la_petite_princesse' %}">
+          <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+            <button class="button" type="submit">
+              <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+                <h3>Acheter</h3>
+              </div>
+            </button>
           </div>
+          </a>
+
+
+          {% else %}
+          <button class="button" type="submit">Connectez vous pour acheter le livre</button>
+          {% endif %}
+
           </section>
 
         </section>
-
-          <!-- {% for favorite in favourites_list %} -->
-
-          <!-- <div id={{ favorite.id }} class="col-12 col-lg-4 border-primary shadow">
-            <div class="card mb-4 mb-lg-0">
-            <div align="right">
-            <div class="numberCircle"><h2>{{ favorite.p_image }}</h2></div>
-            <img src="{{ design.design_image.url }}" alt="A design_picture" height="300"
-            </div>
-            <img src="{{ favorite.p_image.url }}" height="200" class="img-fluid" alt="Responsive image">
-            <img src="{{ favorite.p_image }}" height="200" class="img-fluid" alt="Responsive image">
-            <div class="card-body">
-            <h5 class="card-title">{{ favorite.p_name }}</h5>
-            <h5 class="card-title">{{ favorite.p_description }}</h5>
-            <p><a onclick="deleteFunction(this)" name={{ favorite.id }} class="btn btn-info btn-xs" role="button">Acheter</a></p>
-           </div>
-           </div>
-         </div> -->
-
-          <!-- {% endfor %} -->
 
 
       </div>

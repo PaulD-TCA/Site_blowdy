@@ -21,3 +21,15 @@ def bibliotheque_catalogue(request):
     template = loader.get_template('bibliotheque/catalogue_livres.html')
     context = {}
     return HttpResponse(template.render(context, request))
+
+def la_petite_princesse(request):
+    """Display the main web page."""
+    template = loader.get_template('bibliotheque/la_petite_princesse.html')
+    context = {}
+    return HttpResponse(template.render(context, request))
+
+def gloire_et_richesses(request):
+    """Display the main web page."""
+    template = loader.get_template('bibliotheque/gloire_et_richesses.html')
+    context = {}
+    return HttpResponse(template.render(context, request))
