@@ -5,8 +5,8 @@ from django.contrib.auth.models import User
 class Product(models.Model):
     """fields of Product table"""
     p_name = models.CharField(max_length=200)
-    p_summary = models.CharField(max_length=300)
-    p_description = models.CharField(max_length=7500)
+    p_summary = models.CharField(max_length=600)
+    p_description = models.CharField(max_length=10000)
     p_image = models.FileField(upload_to='product_image')
     p_category = models.CharField(max_length=50)
     p_creation_date = models.DateTimeField(auto_now_add=True)
