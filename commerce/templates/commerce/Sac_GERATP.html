@@ -1,0 +1,75 @@
+{% include 'editorial/header.html' %}
+
+<br><br><br><br><br><br>
+      {% load static %}
+
+<section id="services" class="services">
+  <div class="container">
+
+    <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+      <h2>Gloire et richesse à tout prix (l'avidité)</h2>
+    </div>
+
+    <img src="{% static 'img/portfolio/Sac_GERATP.jpg' %}" alt="image" height="500" class="rounded mx-auto d-block">
+    <br><br>
+    <h2 class="text-center">22€</h2>
+    <br><br>
+    <div id="smart-button-container">
+          <div style="text-align: center;">
+            <div id="paypal-button-container"></div>
+          </div>
+        </div>
+
+     <div id="smart-button-container">
+      <div style="text-align: center;">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
+  <script>
+    function initPayPalButton() {
+      paypal.Buttons({
+        style: {
+          shape: 'pill',
+          color: 'silver',
+          layout: 'vertical',
+          label: 'buynow',
+
+        },
+
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"description":"Sac Gloire et Richesse à Tout prix (L'avidité)","amount":{"currency_code":"EUR","value":22}}]
+          });
+        },
+
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(orderData) {
+
+            // Full available details
+            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+            // Show a success message within this page, e.g.
+            const element = document.getElementById('paypal-button-container');
+            element.innerHTML = '';
+            element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+            // Or go to another URL:  actions.redirect('thank_you.html');
+
+          });
+        },
+
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container');
+    }
+    initPayPalButton();
+  </script>
+
+  </div>
+</section>
+
+<br><br><br><br>
+
+{% include 'editorial/footer.html' %}

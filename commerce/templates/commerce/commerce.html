@@ -133,6 +133,111 @@
 
 </section>
 
+
+<section class="catalog_design">
+<img src="{% static 'img/portfolio/Mug_GERATP.jpg' %}" alt="image" height="150">
+<div class="box_in_design">
+<h3>Mug Gloire et richesse à tout prix (l'avidité)</h3>
+<p>Mug Gloire et richesse à tout prix (l'avidité)</p>
+
+{% if user.is_authenticated %}
+
+<a href="{% url 'Mug_GERATP' %}">
+<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+  <button class="button" type="submit">
+    <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+      <h3>Acheter</h3>
+    </div>
+  </button>
+</div>
+</a>
+
+
+{% else %}
+<button class="button" type="submit">Connectez vous pour acheter l'article</button>
+{% endif %}
+
+</section>
+
+
+<section class="catalog_design">
+<img src="{% static 'img/portfolio/Sac_GERATP.jpg' %}" alt="image" height="150">
+<div class="box_in_design">
+<h3>Gloire et richesse à tout prix (l'avidité)</h3>
+<p>Gloire et richesse à tout prix (l'avidité)</p>
+
+{% if user.is_authenticated %}
+
+<a href="{% url 'Sac_GERATP' %}">
+<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+  <button class="button" type="submit">
+    <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+      <h3>Acheter</h3>
+    </div>
+  </button>
+</div>
+</a>
+
+
+{% else %}
+<button class="button" type="submit">Connectez vous pour acheter l'article</button>
+{% endif %}
+
+</section>
+
+
+<section class="catalog_design">
+<img src="{% static 'img/portfolio/Sweet.jpg' %}" alt="image" height="150">
+<div class="box_in_design">
+<h3>Sweet Gloire et richesse à tout prix (l'avidité)</h3>
+<p>Sweet Gloire et richesse à tout prix (l'avidité)</p>
+
+{% if user.is_authenticated %}
+
+<a href="{% url 'Sweet' %}">
+<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+  <button class="button" type="submit">
+    <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+      <h3>Acheter</h3>
+    </div>
+  </button>
+</div>
+</a>
+
+
+{% else %}
+<button class="button" type="submit">Connectez vous pour acheter l'article</button>
+{% endif %}
+
+</section>
+
+
+<section class="catalog_design">
+<img src="{% static 'img/portfolio/Tapis_souris_GERATP.jpg' %}" alt="image" height="150">
+<div class="box_in_design">
+<h3>Tapis de souris Gloire et richesse à tout prix (l'avidité)</h3>
+<p>Tapis de souris Gloire et richesse à tout prix (l'avidité)</p>
+
+{% if user.is_authenticated %}
+
+<a href="{% url 'Tapis_souris_GERATP' %}">
+<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+  <button class="button" type="submit">
+    <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+      <h3>Acheter</h3>
+    </div>
+  </button>
+</div>
+</a>
+
+
+{% else %}
+<button class="button" type="submit">Connectez vous pour acheter l'article</button>
+{% endif %}
+
+</section>
+
+
 <!-- <nav id="menu">
   <label for="tm" id="toggle-menu">Ourvir le menu <span class="drop-icon">▾</span></label>
   <input type="checkbox" id="tm">
@@ -209,51 +314,3 @@
 
 
 {% include 'editorial/footer.html' %}
-
-
-<div id="menuBlowdy">
-  <div id="logo">Your Logo here</div>
-  <label for="drop" class="toggle">Menu</label>
-  <input type="checkbox" id="drop" />
-  <ul class="menu">
-    <li><a href="#">Home</a></li>
-    <li>
-      <!-- First Tier Drop Down -->
-      <label for="drop-1" class="toggle">Service +</label>
-      <a href="#">Service</a>
-      <input type="checkbox" id="drop-1"/>
-      <ul>
-        <li><a href="#">Service 1</a></li>
-        <li><a href="#">Service 2</a></li>
-        <li><a href="#">Service 3</a></li>
-      </ul>
-    </li>
-    <li>
-
-      <!-- First Tier Drop Down -->
-      <label for="drop-2" class="toggle">Portfolio +</label>
-      <a href="#">Portfolio</a>
-      <input type="checkbox" id="drop-2"/>
-      <ul>
-        <li><a href="#">Portfolio 1</a></li>
-        <li><a href="#">Portfolio 2</a></li>
-        <li>
-
-          <!-- Second Tier Drop Down -->
-          <label for="drop-3" class="toggle">Works +</label>
-          <a href="#">Works</a>
-          <input type="checkbox" id="drop-3"/>
-          <ul>
-            <li><a href="#">HTML/CSS</a></li>
-            <li><a href="#">jQuery</a></li>
-            <li><a href="#">Python</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#">Blog</a></li>
-    <li><a href="#">Submit</a></li>
-    <li><a href="#">Contact</a></li>
-    <li><a href="#">About</a></li>
-  </ul>
-</div>

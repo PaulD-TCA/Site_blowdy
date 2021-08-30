@@ -11,6 +11,10 @@ urlpatterns = [
     path('Sacs/', views.Sacs, name='Sacs'),
     path('Valise_ppme/', views.Valise_ppme, name='Valise_ppme'),
     path('Couette_et_taie/', views.Couette_et_taie, name='Couette_et_taie'),
+    path('Mug_GERATP/', views.Mug_GERATP, name='Mug_GERATP'),
+    path('Sac_GERATP/', views.Sac_GERATP, name='Sac_GERATP'),
+    path('Sweet/', views.Sweet, name='Sweet'),
+    path('Tapis_souris_GERATP/', views.Tapis_souris_GERATP, name='Tapis_souris_GERATP'),
 ]
 
 

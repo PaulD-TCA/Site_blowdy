@@ -51,3 +51,27 @@ def Couette_et_taie(request):
     template = loader.get_template('commerce/Couette_et_taie.html')
     context = {}
     return HttpResponse(template.render(context, request))
+
+def Mug_GERATP(request):
+    """Display the main web page."""
+    template = loader.get_template('commerce/Mug_GERATP.html')
+    context = {}
+    return HttpResponse(template.render(context, request))
+
+def Sac_GERATP(request):
+    """Display the main web page."""
+    template = loader.get_template('commerce/Sac_GERATP.html')
+    context = {}
+    return HttpResponse(template.render(context, request))
+
+def Sweet(request):
+    """Display the main web page."""
+    template = loader.get_template('commerce/Sweet.html')
+    context = {}
+    return HttpResponse(template.render(context, request))
+
+def Tapis_souris_GERATP(request):
+    """Display the main web page."""
+    template = loader.get_template('commerce/Tapis_souris_GERATP.html')
+    context = {}
+    return HttpResponse(template.render(context, request))
