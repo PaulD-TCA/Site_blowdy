@@ -1,0 +1,329 @@
+{% include 'editorial/header.html' %}
+
+<br><br><br><br><br><br>
+
+<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+  <h2>Creation</h2>
+</div>
+{% load static %}
+
+
+<section class="catalog_design">
+<img src="{% static 'img/creation_photos/aura_chromatic.jpg' %}" alt="image" height="150">
+<div class="box_in_design">
+<h3>L'Aura Chromatic à l'acrylique (50x50cm) de Vi</h3>
+<p>L'Aura Chromatic à l'acrylique (50x50cm) de Vi</p>
+{% if user.is_authenticated %}
+<a href="{% url 'aura_chromatic' %}">
+<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+  <button class="button" type="submit">
+    <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+      <h3>Acheter</h3>
+    </div>
+  </button>
+</div>
+</a>
+{% else %}
+<button class="button" type="submit">Connectez vous pour acheter l'article</button>
+{% endif %}
+</section>
+
+
+<section class="catalog_design">
+<img src="{% static 'img/creation_photos/aura_chromatic_2.jpg' %}" alt="image" height="150">
+<div class="box_in_design">
+<h3>L'Aura Chromatic Acrylique dilué de Vi</h3>
+<p>L'Aura Chromatic Acrylique dilué de Vi</p>
+{% if user.is_authenticated %}
+<a href="{% url 'aura_chromatic_2' %}">
+<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+  <button class="button" type="submit">
+    <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+      <h3>Acheter</h3>
+    </div>
+  </button>
+</div>
+</a>
+{% else %}
+<button class="button" type="submit">Connectez vous pour acheter l'article</button>
+{% endif %}
+</section>
+
+
+<section class="catalog_design">
+<img src="{% static 'img/creation_photos/Debacle_polaire.jpg' %}" alt="image" height="150">
+<div class="box_in_design">
+<h3>Débâcle polaire à l'huile (50x50cm) de Vi</h3>
+<p>Débâcle polaire à l'huile (50x50cm) de Vi</p>
+{% if user.is_authenticated %}
+<a href="{% url 'Debacle_polaire' %}">
+<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+  <button class="button" type="submit">
+    <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+      <h3>Acheter</h3>
+    </div>
+  </button>
+</div>
+</a>
+{% else %}
+<button class="button" type="submit">Connectez vous pour acheter l'article</button>
+{% endif %}
+</section>
+
+
+<section class="catalog_design">
+<img src="{% static 'img/creation_photos/Echos_d_ames.jpg' %}" alt="image" height="150">
+<div class="box_in_design">
+<h3>Echos d'ames à l'acrylique + de la cire de Vi</h3>
+<p>Echos d'ames à l'acrylique + de la cire de Vi</p>
+{% if user.is_authenticated %}
+<a href="{% url 'Echos_d_ames' %}">
+<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+  <button class="button" type="submit">
+    <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+      <h3>Acheter</h3>
+    </div>
+  </button>
+</div>
+</a>
+{% else %}
+<button class="button" type="submit">Connectez vous pour acheter l'article</button>
+{% endif %}
+</section>
+
+
+<section class="catalog_design">
+<img src="{% static 'img/creation_photos/La_fleur_verte_de_Sylvie.jpg' %}" alt="image" height="150">
+<div class="box_in_design">
+<h3>La Fleur Verte Sylvie (60x80cm) de Blowdy</h3>
+<p>La Fleur Verte Sylvie (60x80cm) de Blowdy</p>
+{% if user.is_authenticated %}
+<a href="{% url 'La_fleur_verte_de_Sylvie' %}">
+<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+  <button class="button" type="submit">
+    <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+      <h3>Acheter</h3>
+    </div>
+  </button>
+</div>
+</a>
+{% else %}
+<button class="button" type="submit">Connectez vous pour acheter l'article</button>
+{% endif %}
+</section>
+
+
+<section class="catalog_design">
+<img src="{% static 'img/creation_photos/L_ecrivain.jpg' %}" alt="image" height="150">
+<div class="box_in_design">
+<h3>L'écrivain (24x33cm)</h3>
+<p>L'écrivain (24x33cm)</p>
+{% if user.is_authenticated %}
+<a href="{% url 'L_ecrivain' %}">
+<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+  <button class="button" type="submit">
+    <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+      <h3>Acheter</h3>
+    </div>
+  </button>
+</div>
+</a>
+{% else %}
+<button class="button" type="submit">Connectez vous pour acheter l'article</button>
+{% endif %}
+</section>
+
+
+<section class="catalog_design">
+<img src="{% static 'img/creation_photos/Lex_o_Mille.jpg' %}" alt="image" height="150">
+<div class="box_in_design">
+<h3>Lex ô Mille à l'acrylique (80x80cm) de Vi</h3>
+<p>Lex ô Mille à l'acrylique (80x80cm) de Vi</p>
+{% if user.is_authenticated %}
+<a href="{% url 'Lex_o_Mille' %}">
+<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+  <button class="button" type="submit">
+    <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+      <h3>Acheter</h3>
+    </div>
+  </button>
+</div>
+</a>
+{% else %}
+<button class="button" type="submit">Connectez vous pour acheter l'article</button>
+{% endif %}
+</section>
+
+
+<section class="catalog_design">
+<img src="{% static 'img/creation_photos/L_inconstance.jpg' %}" alt="image" height="150">
+<div class="box_in_design">
+<h3>L'inconstance (60x80cm)</h3>
+<p>L'inconstance (60x80cm)</p>
+{% if user.is_authenticated %}
+<a href="{% url 'L_inconstance' %}">
+<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+  <button class="button" type="submit">
+    <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+      <h3>Acheter</h3>
+    </div>
+  </button>
+</div>
+</a>
+{% else %}
+<button class="button" type="submit">Connectez vous pour acheter l'article</button>
+{% endif %}
+</section>
+
+
+<section class="catalog_design">
+<img src="{% static 'img/creation_photos/Lumiere_a_l_horizon.jpg' %}" alt="image" height="150">
+<div class="box_in_design">
+<h3>Lumière à l'horizon (60x80cm)</h3>
+<p>Lumière à l'horizon (60x80cm)</p>
+{% if user.is_authenticated %}
+<a href="{% url 'Lumiere_a_l_horizon' %}">
+<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+  <button class="button" type="submit">
+    <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+      <h3>Acheter</h3>
+    </div>
+  </button>
+</div>
+</a>
+{% else %}
+<button class="button" type="submit">Connectez vous pour acheter l'article</button>
+{% endif %}
+</section>
+
+
+<section class="catalog_design">
+<img src="{% static 'img/creation_photos/Old_vintage.jpg' %}" alt="image" height="150">
+<div class="box_in_design">
+<h3>Old Vintage à l'huile et à la cire (50x50cm) de Vi</h3>
+<p>Old Vintage à l'huile et à la cire (50x50cm) de Vi</p>
+{% if user.is_authenticated %}
+<a href="{% url 'Old_vintage' %}">
+<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+  <button class="button" type="submit">
+    <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+      <h3>Acheter</h3>
+    </div>
+  </button>
+</div>
+</a>
+{% else %}
+<button class="button" type="submit">Connectez vous pour acheter l'article</button>
+{% endif %}
+</section>
+
+
+<section class="catalog_design">
+<img src="{% static 'img/creation_photos/Spirale.jpg' %}" alt="image" height="150">
+<div class="box_in_design">
+<h3>Spirale (60x80cm)</h3>
+<p>Spirale (60x80cm)</p>
+{% if user.is_authenticated %}
+<a href="{% url 'Spirale' %}">
+<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+  <button class="button" type="submit">
+    <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+      <h3>Acheter</h3>
+    </div>
+  </button>
+</div>
+</a>
+{% else %}
+<button class="button" type="submit">Connectez vous pour acheter l'article</button>
+{% endif %}
+</section>
+
+
+<section class="catalog_design">
+<img src="{% static 'img/creation_photos/Stigmate_3.jpg' %}" alt="image" height="150">
+<div class="box_in_design">
+<h3>Stigmate 3 en Emoi à l'acrylique et à l'huile (50x50) de Vi</h3>
+<p>Stigmate 3 en Emoi à l'acrylique et à l'huile (50x50) de Vi</p>
+{% if user.is_authenticated %}
+<a href="{% url 'Stigmate_3' %}">
+<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+  <button class="button" type="submit">
+    <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+      <h3>Acheter</h3>
+    </div>
+  </button>
+</div>
+</a>
+{% else %}
+<button class="button" type="submit">Connectez vous pour acheter l'article</button>
+{% endif %}
+</section>
+
+
+<section class="catalog_design">
+<img src="{% static 'img/creation_photos/Symphonie_de_rue.jpg' %}" alt="image" height="150">
+<div class="box_in_design">
+<h3>Symphonie de rue à l'acrylique (80x60cm) de Vi</h3>
+<p>Symphonie de rue à l'acrylique (80x60cm) de Vi</p>
+{% if user.is_authenticated %}
+<a href="{% url 'Symphonie_de_rue' %}">
+<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+  <button class="button" type="submit">
+    <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+      <h3>Acheter</h3>
+    </div>
+  </button>
+</div>
+</a>
+{% else %}
+<button class="button" type="submit">Connectez vous pour acheter l'article</button>
+{% endif %}
+</section>
+
+
+<section class="catalog_design">
+<img src="{% static 'img/creation_photos/Une_vie_representee.jpg' %}" alt="image" height="150">
+<div class="box_in_design">
+<h3>Une Vie Représentée (60x80cm)</h3>
+<p>Une Vie Représentée (60x80cm)</p>
+{% if user.is_authenticated %}
+<a href="{% url 'Une_vie_representee' %}">
+<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+  <button class="button" type="submit">
+    <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+      <h3>Acheter</h3>
+    </div>
+  </button>
+</div>
+</a>
+{% else %}
+<button class="button" type="submit">Connectez vous pour acheter l'article</button>
+{% endif %}
+</section>
+
+
+<section class="catalog_design">
+<img src="{% static 'img/creation_photos/Vue_de_l_espace.jpg' %}" alt="image" height="150">
+<div class="box_in_design">
+<h3>Vue De l'espace (Inpirée par Thomas Pesquet 33x24cm)</h3>
+<p>Vue De l'espace (Inpirée par Thomas Pesquet 33x24cm)</p>
+{% if user.is_authenticated %}
+<a href="{% url 'Vue_de_l_espace' %}">
+<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+  <button class="button" type="submit">
+    <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+      <h3>Acheter</h3>
+    </div>
+  </button>
+</div>
+</a>
+{% else %}
+<button class="button" type="submit">Connectez vous pour acheter l'article</button>
+{% endif %}
+</section>
+
+<br><br><br><br>
+
+
+
+{% include 'editorial/footer.html' %}
