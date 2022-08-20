@@ -30,4 +30,9 @@ urlpatterns = [
     path('my_space/', include('my_space.urls')),
     path('', include('magazine.urls')),
     path('magazine/', include('magazine.urls')),
+    path('', include('bibliotheque.urls')),
+    path('bibliotheque/', include('bibliotheque.urls')),
+    path('', include('creation.urls')),
+    path('creation/', include('creation.urls')),
+
 ]
